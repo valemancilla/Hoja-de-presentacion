@@ -34,19 +34,20 @@ Crear una plantilla de currículum digital profesional, fácil de personalizar y
 ## 🗂 Estructura del Sistema
 
 HOJA DE PRESENTACION/
- ├── .vscode/
- ├── css/
- │   ├── normalize.css
- │   └── style.css
- ├── images/
- │   ├── github_logo_icon_181401-removebg-preview.png
- │   ├── Imagen de WhatsApp 2025-08-30 a las 17.21.31_3345ceeb.jpg
- │   └── png-transparent-instagram-photo-materia-social-icon-removebg-preview.png
- ├── js/
- ├── videos/
- │   └── video_20250628_170814.mp4
- ├── index.html    
- └── README.md
+├── .vscode/
+├── css/
+│   ├── normalize.css
+│   └── style.css
+├── images/
+│   ├── github_logo_icon_181401-removebg-preview.png
+│   ├── Imagen de WhatsApp 2025-08-30 a las 17.21.31_3345ceeb.jpg
+│   └── png-transparent-instagram-photo-materia-social-icon-removebg-preview.png
+├── js/
+├── videos/
+│   └── video_20250628_170814.mp4
+├── index.html    
+└── README.md
+
 
 ## 📄 ¿Qué hace cada archivo?
 
@@ -57,6 +58,9 @@ HOJA DE PRESENTACION/
 - **videos/**: contiene el video de presentación (mp4).  
 - **js/**: carpeta preparada para futuros scripts (actualmente sin contenido).  
 - **README.md**: documentación del proyecto.
+
+# netlify
+https://gregarious-frangollo-b8383a.netlify.app/
 
 ## ✍️ Autores
 
