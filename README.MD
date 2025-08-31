@@ -1,4 +1,4 @@
-# 📄 Hoja de Presentación (CV Web)
+# 📄 Hoja de Presentación (CV web)
 
 ## 💡 **Descripción del Proyecto**
 
