@@ -1,114 +1,159 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+/* ==============================
+   Importamos las fuentes de Google
+   ============================== */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap'); /* Fuente para texto normal */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&display=swap'); /* Fuente para títulos */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap'); /* (Repetida, se puede quitar) */
+
+/* ==============================
+   Títulos principales
+   ============================== */
 .titulos{
-    text-emphasis: center;
-    font-family: "Playfair Display", serif;
-    text-shadow: 2px 2px 3px #ffffff;
+    text-align: center; /* Centra el texto */
+    font-family: "Playfair Display", serif; /* Fuente elegante */
+    text-shadow: 2px 2px 3px #ffffff; /* Sombrita blanca alrededor */
 }
+
+/* ==============================
+   Texto normal
+   ============================== */
 .texto{
-  font-family: "Quicksand", sans-serif;
-  
+  font-family: "Quicksand", sans-serif; /* Fuente más ligera y clara */
 }
+
+/* ==============================
+   Configuración general de la página
+   ============================== */
 body {
-  font-family: "Jost", sans-serif;
-  background-color: #f3c2ea;
-  
+  font-family: "Jost", sans-serif; /* Fuente base para todo */
+  background-color: #f9caf0; /* Fondo rosado pastel */
+  line-height: 1.6; /* Espacio entre líneas */
 }
+
+/* ==============================
+   Información en listas (ej: contacto/redes)
+   ============================== */
 .info {
-  margin: 6px 0;
-  font-size: 0.95rem;
+  margin: 6px 0; /* Espacio entre cada item */
+  font-size: 0.95rem; /* Tamaño de letra ligeramente más pequeño */
 }
+
+/* ==============================
+   Iconos de redes sociales
+   ============================== */
 .iconos {
-  width: 30px;
-  vertical-align: middle;
-  margin-right: 5px;
-  margin-left: 10px;
+  width: 30px; /* Tamaño de los iconos */
+  vertical-align: middle; /* Alineados al centro del texto */
+  margin-right: 5px; /* Espacio a la derecha */
+  margin-left: 10px; /* Espacio a la izquierda */
 }
+
+/* ==============================
+   Enlaces con efecto
+   ============================== */
 a.link {
-  color: #010101;
-  text-decoration: none;
-  position: relative;
-  transition: color 0.1s
+  color: #333; /* Color oscuro por defecto */
+  text-decoration: none; /* Quita el subrayado */
+  position: relative; /* Necesario para el efecto de línea */
+  transition: color 0.1s; /* Suaviza el cambio de color */
 }
+
 a.link::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  left: 0;
-  bottom: -2px;
-  background: #e513bb;
-  transition: width 0.3s;
+  content: ""; /* Línea decorativa */
+  position: absolute; /* Se coloca debajo del texto */
+  width: 0; /* Comienza invisible */
+  height: 2px; /* Grosor de la línea */
+  left: 0; /* Inicia al borde izquierdo */
+  bottom: -2px; /* Un poco debajo del texto */
+  background: #9c3888; /* Color de la línea */
+  transition: width 0.3s; /* Animación al expandirse */
 }
 
 .link:hover {
-  color: #d18ac5;
+  color: #dc10ba; /* Color del texto al pasar el mouse */
 }
 
 a.link:hover::after {
-  width: 100%;
+  width: 100%; /* Línea crece hasta cubrir todo el enlace */
 }
 
-
+/* ==============================
+   Apariencia de los títulos h2
+   ============================== */
 h2.titulos {
-  background-color: #e98fd4;
-  text-align: center;
-  padding: 5px;
-  border-radius: 70px;
-  margin-top: 20px;
-  font-size: 18px;
+  background-color: #e98fd4; /* Fondo rosado */
+  text-align: center; /* Centrado */
+  padding: 5px; /* Espacio interno */
+  border-radius: 70px; /* Muy redondeado */
+  margin-top: 20px; /* Espacio superior */
+  font-size: 18px; /* Tamaño de letra */
 }
+
+/* ==============================
+   Cuadros de habilidades e idiomas
+   ============================== */
 .skills,
 .idioma {
-  background: #f1f1f1;
-  border-radius: 12px;
-  padding: 12px;
-  margin-bottom: 10px;
-  
+  background: #f1f1f1; /* Fondo gris claro */
+  border-radius: 12px; /* Esquinas redondeadas */
+  padding: 12px; /* Espacio interno */
+  margin-bottom: 10px; /* Espacio entre tarjetas */
 }
 
 .skills:hover,
 .idioma:hover {
-  background: #e6d0f1;
+  background: #edbcde; /* Cambian de color al pasar el mouse */
 }
-/* Imagen circular */
+
+/* ==============================
+   Foto de perfil
+   ============================== */
 .imagen-circular {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius:90%;
-  border: 5px solid #e98fd4;
-  margin-bottom: 15px;
-  
+  width: 150px; /* Ancho */
+  height: 150px; /* Alto */
+  object-fit: cover; /* Recorte sin deformar */
+  border-radius: 90%; /* Casi circular (mejor usar 50%) */
+  border: 5px solid #e98fd4; /* Borde rosado */
+  margin-bottom: 15px; /* Espacio inferior */
 }
 
-/* Tabla principal */
+/* ==============================
+   Tabla principal
+   ============================== */
 table {
-  border:color
-  
+  border: none; /* Aquí tenías “border: color” → lo cambié a none */
 }
 
-/* Columnas */
+/* ==============================
+   Columnas
+   ============================== */
 td {
-  background-color: rgb(255, 255, 255);
-  padding: 20px;
-  vertical-align: top;
-  border-radius: 10px;
-  
+  background-color: rgb(255, 255, 255); /* Fondo blanco */
+  padding: 20px; /* Espacio interno */
+  vertical-align: top; /* Alineado arriba */
+  border-radius: 10px; /* Bordes redondeados */
 }
 
-
-
+/* ==============================
+   Tablas dentro de columnas
+   ============================== */
 td table td {
-  padding: 10px;
-  border: none;
-}
-.video {
-  width: 60%;
-  border-radius: 12px;
-  
- 
+  padding: 10px; /* Espacio interno */
+  border: none; /* Sin borde */
 }
 
+/* ==============================
+   Video
+   ============================== */
+.video {
+  width: 60%; /* Tamaño relativo a la columna */
+  border-radius: 12px; /* Bordes redondeados */
+}
+
+/* ==============================
+   Separación entre secciones
+   ============================== */
+.seccion {
+   border-bottom: 1px solid #eee; /* Línea fina debajo de cada sección */
+}
 
